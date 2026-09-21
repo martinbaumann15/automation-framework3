@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d889efb7-183b-434c-9050-53a6a76b2e2d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/tatf/tests/AdminCEStests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tatf/core/driver/manager/ChromeDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tatf/core/driver/manager/ChromeDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tatf/tests/ConsultarInmobiliariaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tatf/tests/ConsultarInmobiliariaTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.1637991754822954" />
+      <entry key="MS500" value="1.6964057544244069" />
+      <entry key="S2" value="2.004288782330719" />
+      <entry key="S5" value="4.7362989778793425" />
+      <entry key="S10" value="10.888455353163101" />
+      <entry key="S30" value="21.531688507309223" />
+      <entry key="S60" value="25.79619085784975" />
+      <entry key="M2" value="28.30948922201101" />
+      <entry key="M5" value="30.852336860591983" />
+      <entry key="M10" value="33.415573697480255" />
+      <entry key="M15" value="35.23352165753501" />
+      <entry key="M30" value="38.762761147226556" />
+      <entry key="H1" value="43.0536350784615" />
+      <entry key="H2" value="49.359636236529845" />
+      <entry key="H4" value="56.639690820947344" />
+      <entry key="D1" value="72.65078391975504" />
+      <entry key="W1" value="89.59848791428868" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="2.9543558871082493E-140" />
+      <entry key="S60" value="2.430709632505728E-70" />
+      <entry key="M2" value="2.2048503913852976E-35" />
+      <entry key="M5" value="2.0869128645362275E-14" />
+      <entry key="M10" value="2.125216294181903E-7" />
+      <entry key="M15" value="4.784463139403953E-5" />
+      <entry key="M30" value="0.011391180188338332" />
+      <entry key="H1" value="0.1819508917526099" />
+      <entry key="H2" value="0.7355983773740374" />
+      <entry key="H4" value="1.4841591727146024" />
+      <entry key="D1" value="3.6680362046348014" />
+      <entry key="W1" value="6.923378126923834" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.1174836935715495" />
+      <entry key="MS500" value="1.6833120592311202" />
+      <entry key="S2" value="2.0004470735109106" />
+      <entry key="S5" value="4.732368708181883" />
+      <entry key="S10" value="10.883657581629086" />
+      <entry key="S30" value="21.528406809529248" />
+      <entry key="S60" value="25.794208000787634" />
+      <entry key="M2" value="28.308395371287677" />
+      <entry key="M5" value="30.851831479055125" />
+      <entry key="M10" value="33.415051042528745" />
+      <entry key="M15" value="35.23281396166508" />
+      <entry key="M30" value="38.77304298091791" />
+      <entry key="H1" value="43.23443494833373" />
+      <entry key="H2" value="50.094209875348355" />
+      <entry key="H4" value="58.123085964061765" />
+      <entry key="D1" value="76.31858307446265" />
+      <entry key="W1" value="96.52181018299171" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3JTXFPhGQFhtBqLqZI2lfuXMW0l" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.AdminCEStests.crearCuentaAdmin.executor": "Run",
+    "JUnit.AdminCEStests.crearCuentaTester.executor": "Run",
+    "JUnit.AdminCEStests.eliminarCuentaTester.executor": "Run",
+    "JUnit.AdminCEStests.executor": "Run",
+    "JUnit.AdminCEStests.reiniciarContrasena.executor": "Run",
+    "JUnit.ConsultarInmobiliariaTest.consultarPropiedad.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "generacion-scripts-1",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/martinbaumann/Desktop/tareaces5/automation-framework",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.AdminCEStests">
+    <configuration name="AdminCEStests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automated-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tatf.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tatf.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tatf.tests.AdminCEStests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminCEStests.crearCuentaAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automated-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tatf.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tatf.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tatf.tests.AdminCEStests" />
+      <option name="METHOD_NAME" value="crearCuentaAdmin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminCEStests.crearCuentaTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automated-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tatf.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tatf.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tatf.tests.AdminCEStests" />
+      <option name="METHOD_NAME" value="crearCuentaTester" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminCEStests.eliminarCuentaTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automated-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tatf.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tatf.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tatf.tests.AdminCEStests" />
+      <option name="METHOD_NAME" value="eliminarCuentaTester" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminCEStests.reiniciarContrasena" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automated-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tatf.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tatf.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tatf.tests.AdminCEStests" />
+      <option name="METHOD_NAME" value="reiniciarContrasena" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="automation-framework" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="automation-framework" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AdminCEStests" />
+        <item itemvalue="JUnit.AdminCEStests.reiniciarContrasena" />
+        <item itemvalue="JUnit.AdminCEStests.crearCuentaAdmin" />
+        <item itemvalue="JUnit.AdminCEStests.crearCuentaTester" />
+        <item itemvalue="JUnit.AdminCEStests.eliminarCuentaTester" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d889efb7-183b-434c-9050-53a6a76b2e2d" name="Changes" comment="" />
+      <created>1789685928110</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1789685928110</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

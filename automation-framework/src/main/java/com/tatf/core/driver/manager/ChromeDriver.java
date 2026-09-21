@@ -2,6 +2,8 @@ package com.tatf.core.driver.manager;
 
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.util.Map;
+
 public class ChromeDriver extends DriverManager {
     /**
      * Crea el driver de Chrome con las opciones por defecto.
@@ -10,6 +12,11 @@ public class ChromeDriver extends DriverManager {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("start-maximized");
         chromeOptions.addArguments("--ignore-certificate-errors");
+
+        chromeOptions.setExperimentalOption(
+                "prefs",
+                Map.of("profile.password_manager_leak_detection", false)
+        );
 
         this.driver = new org.openqa.selenium.chrome.ChromeDriver(chromeOptions);
         setDefaultConfig();
