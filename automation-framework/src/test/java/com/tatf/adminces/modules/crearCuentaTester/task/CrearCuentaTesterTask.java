@@ -22,7 +22,7 @@ public class CrearCuentaTesterTask {
         crearCuentaTesterPO.escribirNombre(firstName);
         crearCuentaTesterPO.escribirApellido(lastName);
         crearCuentaTesterPO.escribirEmail(email);
-        crearCuentaTesterPO.seleccionarPais();
+        crearCuentaTesterPO.seleccionarPais(country);
         crearCuentaTesterPO.escribirPassword(password);
         crearCuentaTesterPO.seleccionarTesterJunior();
         crearCuentaTesterPO.clickRegistrar();

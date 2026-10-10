@@ -26,9 +26,14 @@ public class CrearCuentaTesterPO {
         browser.find().css("input[name='inputEmail']").write(email);
     }
 
-    public void seleccionarPais() {
-        browser.find().css("select[name='inputCountry'] option[value='Uruguay']").click();
+    public void seleccionarPais(String country) {
+        // Tuve que averiguar por mis medios como hacer para usar el parametro dentro de este selector, para que no quede fijo un solo pais
+        browser.find().css("select[name='inputCountry'] option[value='" + country + "']").click();
     }
+
+//    public void seleccionarPais() {
+//        browser.find().css("select[name='inputCountry'] option[value='Uruguay']").click();
+//    }
 
     public void escribirPassword(String password) {
         browser.find().css("input[name='inputPassword']").write(password);

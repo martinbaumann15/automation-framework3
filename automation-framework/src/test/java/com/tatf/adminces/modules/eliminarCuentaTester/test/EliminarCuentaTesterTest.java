@@ -10,11 +10,21 @@ import com.tatf.adminces.modules.login.data.LoginData;
 import com.tatf.adminces.modules.login.task.LoginTask;
 import com.tatf.core.verification.IVerify;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 public class EliminarCuentaTesterTest extends BaseTest {
 
-    @Test
-    void eliminarCuentaTester() {
+    @ParameterizedTest
+    @CsvSource({
+            "testnombre, testapellido, testemail@gmail.com, Uruguay, testpassword"
+    })
+    void eliminarCuentaTester(
+            String firstName,
+            String lastName,
+            String email,
+            String country,
+            String password) {
 
         browser.interaction().navigateTo(AccessData.url);
 
@@ -27,19 +37,49 @@ public class EliminarCuentaTesterTest extends BaseTest {
         CrearCuentaTesterTask crearCuentaTesterTask = new CrearCuentaTesterTask(browser);
 
         crearCuentaTesterTask.crearCuentaTester(
-                CrearCuentaTesterData.firstName,
-                CrearCuentaTesterData.lastName,
-                CrearCuentaTesterData.email,
-                CrearCuentaTesterData.country,
-                CrearCuentaTesterData.password
+                firstName,
+                lastName,
+                email,
+                country,
+                password
         );
 
         crearCuentaTesterTask.clickConfirmarPopup();
 
         EliminarCuentaTesterTask eliminarCuentaTesterTask = new EliminarCuentaTesterTask(browser);
-        eliminarCuentaTesterTask.eliminarCuentaTester();
+        eliminarCuentaTesterTask.eliminarCuentaTester(email);
 
         String mensaje = eliminarCuentaTesterTask.obtenerMensaje();
         IVerify.create().verify("Usuario eliminado.", mensaje, "El mensaje no es el esperado");
     }
+
+//    @Test
+//    void eliminarCuentaTester() {
+//
+//        browser.interaction().navigateTo(AccessData.url);
+//
+//        AccessTask accessTask = new AccessTask(browser);
+//        accessTask.acceder(AccessData.hash);
+//
+//        LoginTask loginTask = new LoginTask(browser);
+//        loginTask.iniciarSesion(LoginData.email, LoginData.password);
+//
+//        CrearCuentaTesterTask crearCuentaTesterTask = new CrearCuentaTesterTask(browser);
+//
+//        crearCuentaTesterTask.crearCuentaTester(
+//                CrearCuentaTesterData.firstName,
+//                CrearCuentaTesterData.lastName,
+//                CrearCuentaTesterData.email,
+//                CrearCuentaTesterData.country,
+//                CrearCuentaTesterData.password
+//        );
+//
+//        crearCuentaTesterTask.clickConfirmarPopup();
+//
+//        EliminarCuentaTesterTask eliminarCuentaTesterTask = new EliminarCuentaTesterTask(browser);
+//        eliminarCuentaTesterTask.eliminarCuentaTester();
+//
+//        String mensaje = eliminarCuentaTesterTask.obtenerMensaje();
+//        IVerify.create().verify("Usuario eliminado.", mensaje, "El mensaje no es el esperado");
+//    }
 }

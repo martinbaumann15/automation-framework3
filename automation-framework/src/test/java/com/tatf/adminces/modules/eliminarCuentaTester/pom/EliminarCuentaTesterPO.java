@@ -14,9 +14,14 @@ public class EliminarCuentaTesterPO {
         browser.find().css("#cardLogin[href='/adminces/view-users']").click();
     }
 
-    public void clickUsuario() {
-        browser.find().css("button[id='testemail@gmail.com']").click();
+    // Tuve que averiguar por mis medios como hacer para usar el parametro dentro de este selector, para que no quede fijo un solo pais
+    public void clickUsuario(String email) {
+        browser.find().css("button[id='" + email + "']").click();
     }
+
+//    public void clickUsuario() {
+//        browser.find().css("button[id='testemail@gmail.com']").click();
+//    }
 
     public void clickConfirmarEliminacion() {
         browser.find().css("button.swal2-confirm.swal2-styled.swal2-default-outline").click();

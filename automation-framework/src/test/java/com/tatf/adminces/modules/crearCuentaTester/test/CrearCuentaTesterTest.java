@@ -9,11 +9,22 @@ import com.tatf.adminces.modules.login.data.LoginData;
 import com.tatf.adminces.modules.login.task.LoginTask;
 import com.tatf.core.verification.IVerify;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 
 public class CrearCuentaTesterTest extends BaseTest {
 
-    @Test
-    void crearCuentaTester() {
+    @ParameterizedTest(name = "{arguments}")
+    @CsvFileSource(
+            resources = "/crear_cuenta_tester.csv",
+            useHeadersInDisplayName = true
+    )
+    void crearCuentaTester(
+            String firstName,
+            String lastName,
+            String email,
+            String country,
+            String password) {
 
         browser.interaction().navigateTo(AccessData.url);
 
@@ -24,7 +35,12 @@ public class CrearCuentaTesterTest extends BaseTest {
         loginTask.iniciarSesion(LoginData.email, LoginData.password);
 
         CrearCuentaTesterTask crearCuentaTesterTask = new CrearCuentaTesterTask(browser);
-        crearCuentaTesterTask.crearCuentaTester(CrearCuentaTesterData.firstName, CrearCuentaTesterData.lastName, CrearCuentaTesterData.email, CrearCuentaTesterData.country, CrearCuentaTesterData.password
+        crearCuentaTesterTask.crearCuentaTester(
+                firstName,
+                lastName,
+                email,
+                country,
+                password
         );
 
         String mensaje = crearCuentaTesterTask.obtenerMensaje();
@@ -33,3 +49,24 @@ public class CrearCuentaTesterTest extends BaseTest {
         crearCuentaTesterTask.clickConfirmarPopup();
     }
 }
+
+//    @Test
+//    void crearCuentaTester() {
+//
+//        browser.interaction().navigateTo(AccessData.url);
+//
+//        AccessTask accessTask = new AccessTask(browser);
+//        accessTask.acceder(AccessData.hash);
+//
+//        LoginTask loginTask = new LoginTask(browser);
+//        loginTask.iniciarSesion(LoginData.email, LoginData.password);
+//
+//        CrearCuentaTesterTask crearCuentaTesterTask = new CrearCuentaTesterTask(browser);
+//        crearCuentaTesterTask.crearCuentaTester(CrearCuentaTesterData.firstName, CrearCuentaTesterData.lastName, CrearCuentaTesterData.email, CrearCuentaTesterData.country, CrearCuentaTesterData.password
+//        );
+//
+//        String mensaje = crearCuentaTesterTask.obtenerMensaje();
+//        IVerify.create().verify("Usuario creado.", mensaje, "El mensaje no es el esperado");
+//
+//        crearCuentaTesterTask.clickConfirmarPopup();
+//    }

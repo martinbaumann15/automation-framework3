@@ -1,0 +1,3 @@
+firstName,lastName,email,password,repeatPassword,country
+TestNombre1,TestApellido1,test1@gmail.com,testpassword1,testpassword1,Uruguay
+TestNombre2,TestApellido2,test2@gmail.com,testpassword2,testpassword2,Argentina

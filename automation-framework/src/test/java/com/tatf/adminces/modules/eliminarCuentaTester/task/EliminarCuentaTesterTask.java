@@ -11,9 +11,9 @@ public class EliminarCuentaTesterTask {
         this.eliminarCuentaTesterPO = new EliminarCuentaTesterPO(browser);
     }
 
-    public void eliminarCuentaTester() {
+    public void eliminarCuentaTester(String email) {
         eliminarCuentaTesterPO.clickVerUsuarios();
-        eliminarCuentaTesterPO.clickUsuario();
+        eliminarCuentaTesterPO.clickUsuario(email);
         eliminarCuentaTesterPO.clickConfirmarEliminacion();
     }
 
