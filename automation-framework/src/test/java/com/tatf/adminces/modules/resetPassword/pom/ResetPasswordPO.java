@@ -1,13 +1,16 @@
 package com.tatf.adminces.modules.resetPassword.pom;
 
+import com.tatf.adminces.modules.base.PopupPO;
 import com.tatf.core.browser.IBrowser;
 
 public class ResetPasswordPO {
 
-    private IBrowser browser;
+    private final IBrowser browser;
+    private final PopupPO popupPO;
 
     public ResetPasswordPO(IBrowser browser) {
         this.browser = browser;
+        this.popupPO = new PopupPO(browser);
     }
 
     public void clickForgotPassword() {
@@ -31,6 +34,10 @@ public class ResetPasswordPO {
     }
 
     public String obtenerMensaje() {
-        return browser.find().css("#swal2-html-container").getText();
+        return popupPO.obtenerMensaje();
+    }
+
+    public void clickConfirmarPopup() {
+        popupPO.clickConfirmar();
     }
 }

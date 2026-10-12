@@ -5,7 +5,7 @@ import com.tatf.core.browser.IBrowser;
 
 public class ResetPasswordTask {
 
-    private ResetPasswordPO resetPasswordPO;
+    private final ResetPasswordPO resetPasswordPO;
 
     public ResetPasswordTask(IBrowser browser) {
         this.resetPasswordPO = new ResetPasswordPO(browser);
@@ -25,5 +25,9 @@ public class ResetPasswordTask {
 
     public String obtenerMensaje() {
         return resetPasswordPO.obtenerMensaje();
+    }
+
+    public void clickConfirmarPopup() {
+        resetPasswordPO.clickConfirmarPopup();
     }
 }

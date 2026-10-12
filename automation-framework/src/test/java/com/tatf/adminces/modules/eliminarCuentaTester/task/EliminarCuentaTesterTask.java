@@ -5,7 +5,7 @@ import com.tatf.core.browser.IBrowser;
 
 public class EliminarCuentaTesterTask {
 
-    private EliminarCuentaTesterPO eliminarCuentaTesterPO;
+    private final EliminarCuentaTesterPO eliminarCuentaTesterPO;
 
     public EliminarCuentaTesterTask(IBrowser browser) {
         this.eliminarCuentaTesterPO = new EliminarCuentaTesterPO(browser);

@@ -24,7 +24,7 @@ public class BrowserFactory {
      * Lee el browser a usar desde la propiedad del sistema "browser" (CHROME por defecto).
      */
     private static DriverType resolveDriverType() {
-        String browserProperty = System.getProperty("browser", "CHROME");
+        String browserProperty = System.getProperty("browser", "CHROME"); // Cambiar a FIREFOX para correr las pruebas en ese navegador. Verifique previamente que las pruebas corran corretcamente en ambos navegadores.
         return DriverType.valueOf(browserProperty.toUpperCase());
     }
 

@@ -1,13 +1,16 @@
 package com.tatf.adminces.modules.login.pom;
 
+import com.tatf.adminces.modules.base.PopupPO;
 import com.tatf.core.browser.IBrowser;
 
 public class LoginPO {
 
-    private IBrowser browser;
+    private final IBrowser browser;
+    private final PopupPO popupPO;
 
     public LoginPO(IBrowser browser) {
         this.browser = browser;
+        this.popupPO = new PopupPO(browser);
     }
 
     public void clickLogin() {
@@ -27,6 +30,18 @@ public class LoginPO {
     }
 
     public void clickConfirmarPopup() {
-        browser.find().css("button.swal2-confirm").click();
+        popupPO.clickConfirmar();
+    }
+
+    public String obtenerMensaje() {
+        return popupPO.obtenerMensaje();
+    }
+
+    public void clickOpcionesUsuario() {
+        browser.find().css("a.dropdown-toggle[data-bs-toggle='dropdown']").click();
+    }
+
+    public void clickCerrarSesion() {
+        browser.find().css("a.dropdown-item[href='/adminces']").click();
     }
 }

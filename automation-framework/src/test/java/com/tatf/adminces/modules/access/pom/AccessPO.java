@@ -4,7 +4,7 @@ import com.tatf.core.browser.IBrowser;
 
 public class AccessPO {
 
-    private IBrowser browser;
+    private final IBrowser browser;
 
     public AccessPO(IBrowser browser) {
         this.browser = browser;

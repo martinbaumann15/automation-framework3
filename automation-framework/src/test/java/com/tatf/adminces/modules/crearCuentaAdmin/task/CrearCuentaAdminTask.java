@@ -5,7 +5,7 @@ import com.tatf.core.browser.IBrowser;
 
 public class CrearCuentaAdminTask {
 
-    private CrearCuentaAdminPO crearCuentaAdminPO;
+    private final CrearCuentaAdminPO crearCuentaAdminPO;
 
     public CrearCuentaAdminTask(IBrowser browser) {
         this.crearCuentaAdminPO = new CrearCuentaAdminPO(browser);
@@ -31,5 +31,9 @@ public class CrearCuentaAdminTask {
 
     public String obtenerMensaje() {
         return crearCuentaAdminPO.obtenerMensaje();
+    }
+
+    public void clickConfirmarPopup() {
+        crearCuentaAdminPO.clickConfirmarPopup();
     }
 }

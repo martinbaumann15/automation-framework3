@@ -1,13 +1,17 @@
+
 package com.tatf.adminces.modules.crearCuentaTester.pom;
 
+import com.tatf.adminces.modules.base.PopupPO;
 import com.tatf.core.browser.IBrowser;
 
 public class CrearCuentaTesterPO {
 
-    private IBrowser browser;
+    private final IBrowser browser;
+    private final PopupPO popupPO;
 
     public CrearCuentaTesterPO(IBrowser browser) {
         this.browser = browser;
+        this.popupPO = new PopupPO(browser);
     }
 
     public void clickCrearUsuario() {
@@ -27,13 +31,8 @@ public class CrearCuentaTesterPO {
     }
 
     public void seleccionarPais(String country) {
-        // Tuve que averiguar por mis medios como hacer para usar el parametro dentro de este selector, para que no quede fijo un solo pais
         browser.find().css("select[name='inputCountry'] option[value='" + country + "']").click();
     }
-
-//    public void seleccionarPais() {
-//        browser.find().css("select[name='inputCountry'] option[value='Uruguay']").click();
-//    }
 
     public void escribirPassword(String password) {
         browser.find().css("input[name='inputPassword']").write(password);
@@ -48,10 +47,10 @@ public class CrearCuentaTesterPO {
     }
 
     public String obtenerMensaje() {
-        return browser.find().css("#swal2-html-container").getText();
+        return popupPO.obtenerMensaje();
     }
 
     public void clickConfirmarPopup() {
-        browser.find().css("button.swal2-confirm").click();
+        popupPO.clickConfirmar();
     }
 }

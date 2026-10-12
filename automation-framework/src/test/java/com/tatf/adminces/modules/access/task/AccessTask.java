@@ -5,7 +5,7 @@ import com.tatf.core.browser.IBrowser;
 
 public class AccessTask {
 
-    private AccessPO accessPO;
+    private final AccessPO accessPO;
 
     public AccessTask(IBrowser browser) {
         this.accessPO = new AccessPO(browser);

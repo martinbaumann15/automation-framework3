@@ -2,6 +2,6 @@ package com.tatf.adminces.modules.login.data;
 
 public class LoginData {
 
-    public static String email = "leonardoperez@gmail.com";
-    public static String password = "12345";
+    public static final String email = "leonardoperez@gmail.com";
+    public static final String password = "12345";
 }

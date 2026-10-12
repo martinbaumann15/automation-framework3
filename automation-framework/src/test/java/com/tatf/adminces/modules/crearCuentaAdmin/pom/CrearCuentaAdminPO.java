@@ -1,13 +1,16 @@
 package com.tatf.adminces.modules.crearCuentaAdmin.pom;
 
+import com.tatf.adminces.modules.base.PopupPO;
 import com.tatf.core.browser.IBrowser;
 
 public class CrearCuentaAdminPO {
 
-    private IBrowser browser;
+    private final IBrowser browser;
+    private final PopupPO popupPO;
 
     public CrearCuentaAdminPO(IBrowser browser) {
         this.browser = browser;
+        this.popupPO = new PopupPO(browser);
     }
 
     public void clickRegister() {
@@ -43,6 +46,10 @@ public class CrearCuentaAdminPO {
     }
 
     public String obtenerMensaje() {
-        return browser.find().css("#swal2-html-container").getText();
+        return popupPO.obtenerMensaje();
+    }
+
+    public void clickConfirmarPopup() {
+        popupPO.clickConfirmar();
     }
 }

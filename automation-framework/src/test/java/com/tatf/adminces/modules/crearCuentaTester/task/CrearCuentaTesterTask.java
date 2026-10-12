@@ -5,7 +5,7 @@ import com.tatf.core.browser.IBrowser;
 
 public class CrearCuentaTesterTask {
 
-    private CrearCuentaTesterPO crearCuentaTesterPO;
+    private final CrearCuentaTesterPO crearCuentaTesterPO;
 
     public CrearCuentaTesterTask(IBrowser browser) {
         this.crearCuentaTesterPO = new CrearCuentaTesterPO(browser);
